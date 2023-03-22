@@ -16,8 +16,8 @@ Servo servo4; // Servo object for (right???) front door of wardrobe
 
 // Variables that will change:
   // Set the initial angles of the servo motors
-int angle1 = 0;  
-int angle2 = 180;
+int angle1 = 180; 
+int angle2 = 0;
 int angle3 = 0;  
 int angle4 = 0; // This one is a different brand of servo motor, so it rotates in the opposite direction of the others -- have to set it opposite, so 3 and 4 actually end up moving between the same angles
 int lastButton1State;    // The previous state of the first button
@@ -78,8 +78,8 @@ void loop() {
     // Open the back doors of the wardrobe
     // Open the doors 90 degrees into Narnia; follow same logic as above for why they are being incremented (but incremented faster)
     while(angle1 != 90 && angle2 != 90){
-      angle1 += 1;
-      angle2 -= 1;
+      angle1 -= 1;
+      angle2 += 1;
       servo1.write(angle1);
       servo2.write(angle2);
       delay(10);
@@ -110,8 +110,8 @@ void loop() {
       // If the random number was even, open the back doors and turn on the light
       if(randnumber % 2 == 0){
         while(angle1 != 90 && angle2 != 90){
-        angle1 += 1;
-        angle2 -= 1;
+        angle1 -= 1;
+        angle2 += 1;
         servo1.write(angle1);
         servo2.write(angle2);
         delay(10);
@@ -126,9 +126,9 @@ void loop() {
     else {
 
       // Close the back doors (if they were open)
-      while(angle1 != 0 && angle2 != 180){
-        angle1 -= 1;
-        angle2 += 1;
+      while(angle1 != 180 && angle2 != 0){
+        angle1 += 1;
+        angle2 -= 1;
         servo1.write(angle1);
         servo2.write(angle2);
         delay(10);
@@ -152,13 +152,13 @@ void loop() {
   if(lastButton2State == HIGH && currentButton2State == LOW) {
 
     // If any of the doors are open or the light is on, close them following procedure above
-    while(angle1 != 0 && angle2 != 180){
-      angle1 -= 1;
-      angle2 += 1;
-      servo1.write(angle1);
-      servo2.write(angle2);
-      delay(10);
-    }
+    while(angle1 != 180 && angle2 != 0){
+        angle1 += 1;
+        angle2 -= 1;
+        servo1.write(angle1);
+        servo2.write(angle2);
+        delay(10);
+      }
     digitalWrite(LED_PIN, LOW);
 
     while(angle3 != 0 && angle4 != 0){
