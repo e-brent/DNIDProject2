@@ -60,15 +60,10 @@ void loop() {
   lastButton2State = currentButton2State;          // Save the last state of button2
   currentButton2State = digitalRead(BUTTON2_PIN);  // Read the new state of button2
   
-  //randnumber = random(200); //may not need this here but keeping it just in case for now
 
   // Button1 pressed and it is the beginning of the simulation/presentation
   if(lastButton1State == HIGH && currentButton1State == LOW && firstPress == true) {
     firstPress = false; // Set the first press to false
-
-    // This was included in the original code I started with but honestly I don't know what it does
-    Serial.println("The button 1 is pressed");
-    Serial.println(randnumber);
     
     // Open the front doors of the wardrobe
     // Open the doors outwards 90 degrees (maybe more?); moving them slowly to avoid trying to draw too much power
@@ -92,6 +87,7 @@ void loop() {
     digitalWrite(LED_PIN, HIGH); //Turn on the LED light
   }
 
+
   // Button1 is pressed but it is not the first time 
   else if (lastButton1State == HIGH && currentButton1State == LOW && firstPress == false){
 
@@ -101,10 +97,6 @@ void loop() {
 
       // Generate a random number to determine if we are going to open the back doors of the wardrobe
       randnumber = random(200); 
-
-      // Do I need this??
-      Serial.println("The button 1 is pressed");
-      Serial.println(randnumber);
       
       // Open the front doors 
       while(angle3 != 90 && angle4 != 90){
@@ -129,13 +121,10 @@ void loop() {
       }
     }
 
+
     // The doors are currently open; close them
     else {
 
-      // Delete???
-      Serial.println("The button 1 is pressed");
-      Serial.println(randnumber);
-          
       // Close the back doors (if they were open)
       while(angle1 != 0 && angle2 != 180){
         angle1 -= 1;
@@ -158,13 +147,10 @@ void loop() {
     }
   }
 
+
   // If the second button (the reset button is pressed)
   if(lastButton2State == HIGH && currentButton2State == LOW) {
 
-    // Delete?????
-    Serial.println("The button 2 is pressed");
-    Serial.println(randnumber);
-        
     // If any of the doors are open or the light is on, close them following procedure above
     while(angle1 != 0 && angle2 != 180){
       angle1 -= 1;
@@ -183,8 +169,8 @@ void loop() {
       delay(15);
     }
 
-    //Set boolean value back to true, next time button1 is pressed all the doors are guaranteed to open
-    firstPress == true;
+    //Set boolean value back to true, next time button1 is pressed all the doors are guaranteed to open (resets project)
+    firstPress = true;
   }
 
 }
