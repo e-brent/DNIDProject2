@@ -3,16 +3,16 @@
 // Constant variables, won't change -- define where objects are connected to the Arduino board
 const int BUTTON1_PIN = 13; // Arduino pin connected to first button - will open and close doors
 const int BUTTON2_PIN = 12; // Arduino pin connected to second button - will reset count to restart presentation, will close doors if open
-const int SERVO1_PIN = 9;   // Door for back of wardrobe (left or right???)
-const int SERVO2_PIN = 10;  // Door for back of wardrobe (left or right???)
-const int SERVO3_PIN = 7;   // Door for front of wardrobe (I think left???)
-const int SERVO4_PIN = 6;   // Door for front of wardrobe (I think right???)
+const int SERVO1_PIN = 9;   // Door for back right of wardrobe
+const int SERVO2_PIN = 10;  // Door for back left of wardrobe
+const int SERVO3_PIN = 7;   // Door for front left of wardrobe
+const int SERVO4_PIN = 6;   // Door for front right of wardrobe
 #define LED_PIN 11          // LED light 
 
-Servo servo1; // Servo object for (left or right???) back door of wardrobe
-Servo servo2; // Servo object for (left or right???) back door of wardrobe
-Servo servo3; // Servo object for (left ???) front door of wardrobe
-Servo servo4; // Servo object for (right???) front door of wardrobe
+Servo servo1; // Servo object for right back door of wardrobe
+Servo servo2; // Servo object for left back door of wardrobe
+Servo servo3; // Servo object for left front door of wardrobe
+Servo servo4; // Servo object for right front door of wardrobe
 
 // Variables that will change:
   // Set the initial angles of the servo motors
@@ -26,6 +26,8 @@ int lastButton2State;    // The previous state of the second button
 int currentButton2State; // The current state of the second button
 
 int randnumber = 1; // After the first time opening, the back doors will open based on if this number is even or odd. Arbitrarily set to 1 just to have initial value
+// Having this set to a value isn't necessarily needed, but I don't want to delete it now because I don't have the project with me to check that it doesn't get messed up
+
 bool firstPress = true; //Boolean value that will be reset with the second button
 
 
@@ -66,7 +68,7 @@ void loop() {
     firstPress = false; // Set the first press to false
     
     // Open the front doors of the wardrobe
-    // Open the doors outwards 90 degrees (maybe more?); moving them slowly to avoid trying to draw too much power
+    // Open the doors outwards 90 degrees; moving them slowly to avoid trying to draw too much power
     while(angle3 != 90 && angle4 != 90){
       angle3 += 1;
       angle4 += 1;
@@ -174,3 +176,9 @@ void loop() {
   }
 
 }
+
+/*
+This code is not the most efficiently written, there is a lot of redundancy and rewritten code. Because we wrote this in stages, I didn't think to compress it at the time as we
+were making changes to different pieces constantly. While I could clean it up retroactively, I don't have the project with me at this time to check that I didn't break it, so I'm 
+going to leave it in the form that we implemented it as in the showcase.
+*/
