@@ -38,8 +38,8 @@ While the code still had a ways to go before it was ready, the hardware really o
 
 <img src="./Images/WiringFinalLabeled.jpeg"
      alt="An Arduino and a breadboard with wiring for four servo motors, an LED, and two buttons. The wiring for each object has been circled."
-     width = "400"
-     height = "500"> 
+     width = "450"
+     height = "800"> 
      
 *Fig 4. **%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%Labels may need to be updated** All of the hardware we need for the project is now hooked up. We knew for the final project that we would need the hardware to have greater range, so at this point the buttons and the LED light have been put on extension wires. We later added extension wires to the servo motors as well.*
 
