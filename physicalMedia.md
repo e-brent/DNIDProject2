@@ -45,8 +45,14 @@ While the code still had a ways to go before it was ready, the hardware really o
 
 
 ## The Diorama
+Helen was the lead in designing and building the diorama portion of this assignment. The basis of our project was a cardboard box, which they used felt, glitter, miniatures from Michael's, and paint to decorate. They also 3D printed two objects in resin on a personal 3D printer, the lamppost and the faun, Mr. Tumnus (Fig 5). The designs for these assets were posted on UltiMaker Thingiverse. Mr. Tumnus used a design called [Male Satyr](https://www.thingiverse.com/thing:3063960), posted by mrhers2 on August 23, 2018, and the lamppost came from a design titled [Street lamp (Réverbère)](https://www.thingiverse.com/thing:3641049), uploaded by Aspect50 on May 19, 2019.
 
 <img src="./Images/3DAssets.jpg"
      alt="Looking down on a hand opened upward. In their palm is a 3D printed grey miniature lamppost and faun."
      width = "400"
      height = "500">
+
+*Fig 5. Our 3D printed assets, printed on a personal resin 3D printer.*
+
+These assets were painted using arylic paint and added to the set (Fig 6). The scene includes a false floor with a hill at the back which we used to hide the Arduino, breadboard, and wires. Holes have been cut in the floor for the LED  wires to go through as well as the arms of the motors. The doors have not yet been attached as this was before we combined our work. 
+
