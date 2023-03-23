@@ -41,7 +41,7 @@ While the code still had a ways to go before it was ready, the hardware really o
      width = "450"
      height = "800"> 
      
-*Fig 4. **%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%Labels may need to be updated** All of the hardware we need for the project is now hooked up. We knew for the final project that we would need the hardware to have greater range, so at this point the buttons and the LED light have been put on extension wires. We later added extension wires to the servo motors as well.*
+*Fig 4. All of the hardware we need for the project is now hooked up. We knew for the final project that we would need the hardware to have greater range, so at this point the buttons and the LED light have been put on extension wires. We later added extension wires to the servo motors as well.*
 
 
 ## The Diorama
