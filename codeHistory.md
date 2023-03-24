@@ -3,7 +3,7 @@
 While we didn't keep track of our code through commits to this repository, we did keep a backup file of differrent iterations of our code in a spearate file as a back up incase certain changes didn't work and we needed to go back. In this file, we'll go through the big changes and hurdles we faced while developing the code for this project. 
 
 ## The original code
-Because neither of us had prior experience using Arduino, we started by finding an open source tutorial with one of the basic actions we knew we wanted to use in our project to provide a starting framework to build off of. [The tutorial we used from Arduino Get Started](https://arduinogetstarted.com/tutorials/arduino-button-servo-motor) moved a servo motor when a button was pushed.
+Because neither of us had prior experience using Arduino, we started by finding an open source tutorial with one of the basic actions we knew we wanted to use in our project- moving a servo motor with a button- to provide a starting framework to build off of. The tutorial we used was [from Arduino Get Started](https://arduinogetstarted.com/tutorials/arduino-button-servo-motor).
 
 ```
 /*
@@ -119,3 +119,77 @@ void loop() {
 We knew that we wanted to have the back doors to Narnia open inconsistently when the button was pressed, so to simulate this we decided to have them open based on a random number generator. The general concept we knew we wanted to use was that if the random number was even, then the doors would open, and if it was odd, then they wouldn't. 
 
 Since we had never built a random number generator, we used [this tutorial from Tutorials Point](https://www.tutorialspoint.com/arduino/arduino_random_numbers.htm) to get us started. We added an integer variable `randnumber` to store the generated value. Under setup(), we added `randomSeed(anaglogRead(0))` to reset the generator to a random value based on noise from the unused analog pin. Under loop(), each time the button was pressed we would generate a random number between 0 and 200 using `randnumber = random(200)`. Then, to determine whether we should open the doors or not we made an if-statement with the condition `randnumber % 2 == 0`, inside of which were the controls to open the doors. The code to close the doors was still outside of that if-statement, so that code would run consistently.
+
+## Adding an LED light
+Once two servo motors were addded and working, we knew adding the other two would be pretty easy since it would follow a similar process, so we moved our attention to the other equipment we were going to use: an LED. It was surprisingly difficult to find a diagram with an LED wired to a breadboard in a way that we knew would be necessary for when we moved the LED farther from the breadboard on extension wires, but luckily we found the [Arduino LED - Complete Tutorial](https://roboticsbackend.com/arduino-led-complete-tutorial/) on Robotics Backend, and the code ended up being fairly simple: 
+* With the rest of our constants defined at the top of our file, we included `#define LED_PIN 11` 
+* In setup(), we added `pinMode(LED_PIN, OUTPUT)`
+* In loop(), when the button is pressed we added a couple lines so that the LED would turn off after a delay because we were really just looking for proof of concept that we had wired it correctly. The code we added was as follows: 
+```
+digitalWrite(LED_PIN, HIGH);
+delay(2000)
+digitalWrite(LED_PIN, LOW);
+```
+
+## Adding the second button
+We knew that our final product would have at least two buttons (there was a time when we considered three, but there didn't end up being enough space for that), and that the buttons would have a big effect on the structure of the code, so that was the next thing we added. At this time we made the function of the two buttons so that one would open the doors and turn on the light, and the other would close the doors and turn off the light. The random number generator was still being used under the "open" button, so when it was pressed, sometimes the code would run and sometimes it wouldn't.
+
+```
+#include <Servo.h>
+
+// constants won't change
+const int BUTTON1_PIN = 13; // Arduino pin connected to button's pin
+const int BUTTON2_PIN = 12;
+const int SERVO1_PIN = 9; // Arduino pin connected to servo motor's pin
+const int SERVO2_PIN = 10;
+#define LED_PIN 11
+
+Servo servo1; // create servo object to control a servo
+Servo servo2;
+
+// variables will change:
+int angle1 = 0;  
+int angle2 = 180;        // the current angle of servo motor
+int lastButton1State;    // the previous state of button
+int currentButton1State; // the current state of button
+int lastButton2State;    // the previous state of button
+int currentButton2State;
+int randnumber = 1;
+
+void setup() {
+  Serial.begin(9600);                // initialize serial
+  randomSeed(analogRead(0));
+
+  pinMode(BUTTON1_PIN, INPUT_PULLUP); // set arduino pin to input pull-up mode
+  pinMode(BUTTON2_PIN, INPUT_PULLUP);
+  servo1.attach(SERVO1_PIN);           // attaches the servo on pin 9 to the servo object
+  servo2.attach(SERVO2_PIN);
+  
+  servo1.write(angle1);
+  servo2.write(angle2);
+  
+  currentButton1State = digitalRead(BUTTON1_PIN);
+  currentButton2State = digitalRead(BUTTON2_PIN);
+
+  pinMode(LED_PIN, OUTPUT);
+}
+
+void loop() {
+  lastButton1State = currentButton1State;      // save the last state
+  currentButton1State = digitalRead(BUTTON1_PIN); // read new state
+  lastButton2State = currentButton2State;      // save the last state
+  currentButton2State = digitalRead(BUTTON2_PIN); // read new state
+  
+  if(lastButton1State == HIGH && currentButton1State == LOW){
+  
+  //add random number here
+  
+     Serial.println("The button 1 is pressed");
+     Serial.println(randnumber);
+     
+     // change angle of servo motor
+    if(angle1 == 0)
+      angle1 = 90;
+      
+      //finish writing in code
+ ```
