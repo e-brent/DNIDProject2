@@ -1,7 +1,7 @@
 # Physical Media
 Though a large portion of this repository is dedicated to documenting our coding process, equally important to the project are the physical mediums it manifested through. There are two broad categories for the physical apsects of this project: the wiring and Arduino hardware, and the set design of the diorama. Here, we will mostly be discussing the development of these aspects separately, as they didn't come together until towards the end of the project. If you want to see everything working together in action, check out our [video](unit2 project vid.mp4) included in this repository. 
 
-Alt text image descriptions are provided.
+Alt text image descriptions are included.
 
 ## Arduino Build
 I (Emme) took the lead on the Arduino coding and wiring portion of this project. Because of the iterative nature of revising code (the details of which can be found in [this file](codeHistory.md)), the hardware and our wiring evolved over the course of the project.
