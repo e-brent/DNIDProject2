@@ -69,10 +69,10 @@ These assets were painted using arylic paint and added to the set (Fig 6). The s
 ## Combining the components
 At this point, our individual pieces were complete and needed to be put together. As mentioned, the Arduino, breadboard, and wiring went under the hill at the back of the box, and the false floor provided room for our wires and motors to be hidden (Fig 7). The arms of the motors poked through the floor and we hotglued the doors to them. We also had to put the wiring for the LED light through the floor and the lamppost, which proved to be a little too narrow for both wires, but we managed to simply hide the other wire behind the lamppost without issue. The final step of adding the wiring was to cut holes in the side of the box for the buttons, which Helen then labeled for clarity. 
 
-<img src="./Images/FinalWiringInProject2.jpg"
+<img src="./Images/FinalWiringInProject2.jpeg"
      alt="An Arduino and breadboard with wiring in a cardboard box; the floor of the scene has been lifted up to show this."
      width = "400"
-     height = "500"><img src="./Images/FinalWiringInProject2.jpg"
+     height = "500"><img src="./Images/FinalWiringInProject2.jpeg"
      alt="Servo motors stuck down to a cardboard box and wiring for the motors and LED light; the floor of the scene has been lifted up to show this."
      width = "400"
      height = "500">
@@ -81,16 +81,16 @@ At this point, our individual pieces were complete and needed to be put together
 
 Once everything was combined, we made small adjustments to the places of objects and trimmed small pieces until everything was able to move smoothly without hitting other pieces or breaking, and then we were done (Fig 8).
 
-<img src="./Images/FinalFrontViewDoorsClosed.jpg"
+<img src="./Images/FinalFrontViewDoorsClosed.jpeg"
      alt="The front view of the cardboard box, painted brown, with doors painted to look like a wardrobe that are closed."
      width = "400"
-     height = "500"><img src="./Images/FinalFrontBackDoorsClosed.jpg"
+     height = "500"><img src="./Images/FinalFrontBackDoorsClosed.jpeg"
      alt="The front view of the cardboard box, painted brown, with one set of doors open looking at another closed set with clothes painted on them."
      width = "400"
-     height = "500"><img src="./Images/FinalFrontBothDoorsOpen.jpg"
+     height = "500"><img src="./Images/FinalFrontBothDoorsOpen.jpeg"
      alt="The front view of the cardboard box, painted brown with the doors open, looking at a winter scene."
      width = "400"
-     height = "500"><img src="./Images/FinalSetUpBirdsEye.jpg"
+     height = "500"><img src="./Images/FinalSetUpBirdsEye.jpeg"
      alt="A bird's eye view of the final scene with both sets of doors closed."
      width = "400"
      height = "500">
@@ -100,7 +100,7 @@ Once everything was combined, we made small adjustments to the places of objects
 ## Design Changes
 Though we had a pretty good idea of what we wanted to do from the beginning, there were a couple small changes made throughout the process. Over spring break, while Emme finished the wiring, she got worried about how the servo motors would be placed in the scene and constructed a wardrobe facade that we could put on the front of the box (Fig 9). However, when it actually came time to build it, we realized that that wasn't necessary and reverted to our original plan.
 
-<img src="./Images/WardrobeUnused.jpg"
+<img src="./Images/WardrobeUnused.jpeg"
      alt="A small, open faced cardboard box, glued into the shape of a wardrobe without doors."
      width = "400"
      height = "500">
@@ -109,14 +109,14 @@ Though we had a pretty good idea of what we wanted to do from the beginning, the
 
 The other change made was to the interior of the wardrobe. We had orignally planned to create 3-dimensional hanging clothes that users could move out of the way. At one point, we had thought about using pages from the book in our scene (we bought a secondhand copy), and if we were already taking apart a book, then we could make the clothes out of book pages. When the rest of our design didn't end up using book pages, we felt too bad about destroying a book for only a couple pages, so Helen constructed some clothes out of contruction paper (Fig 10). However, after constructing the scene, we realized the wardrobe was too shallow for the clothes and they would get in the way of the doors moving. So, Helen painted coats on the back doors of the wardrobe as a final alternative (Fig 11). After doing this, we decided that it matched the styling of the scene better and we are both very happy with our final product.  
 
-<img src="./Images/ClothingUnused.jpg"
+<img src="./Images/ClothingUnused.jpeg"
      alt="Blue and green construction paper folded into the shape of clothing, hung on very small wire hangers."
      width = "400"
      height = "500">
      
 *Fig 10. The contruction paper clothing we would have used, had they not ended up fitting in the wardrobe. We did really like the extra interactivity they would have added, but we like the visuals of the option we ended up going with better.*
 
-<img src="./Images/WardrobeBackDoorsPainted.jpg"
+<img src="./Images/WardrobeBackDoorsPainted.jpeg"
      alt="A front view of the cardboard box with the front doors removed and the backdoors closed, showing the painted clothing on them."
      width = "400"
      height = "500">
