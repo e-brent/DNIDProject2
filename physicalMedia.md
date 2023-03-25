@@ -60,15 +60,30 @@ These assets were painted using arylic paint and added to the set (Fig 6). The s
      alt="Looking in through a hole in the front of a cardboard on a winter scene with a faun and a lamppost. Painted doors are resting against the front of the box."
      width = "400"
      height = "500"> <img src="./Images/SetBuildDetachedDoorsBirdsEye.png"
-     alt="Looking down from above on a winter scene with a faun and a lamppost. At the front of the scene there is an empty space for the inside of the wardrobe."
+     alt="Looking down from above on a winter scene with a faun and a lamppost in a cardboard box. At the front of the scene there is an empty space for the inside of the wardrobe."
      width = "400"
      height = "500">
      
 *Fig 6. (left) A front view of our scene before any wiring was done and the doors were attached. (right) A birds eye view of the same scene; here the empty space at the front of the box is more visible -- this space will become the inside of the wardrobe.*
 
 ## Combining the components
-At this point, our individual pieces were complete and needed to be put together. As mentioned, the Arduino, breadboard, and wiring went under the hill at the back of the box, and the false floor provided room for our wires and motors to be hidden. The arms of the motors poked through the floor and we hotglued the doors to them. Here, we had to make some adjustments because our measurements hadn't been exact and we needed to make sure that pieces weren't hitting each other when they moved. These were minor changes such as trimming back the felt in one area and trimming a very small amount off the tops of the front doors. We also had to put the wiring for the LED light through the lamppost, which proved to be a little too narrow for both wires, but we managed to simply hide the other one behind the lamppost without issue. The final step of combining our pieces was to cut holes in the side of the box for the buttons, which Helen then labeled for clarity. 
+At this point, our individual pieces were complete and needed to be put together. As mentioned, the Arduino, breadboard, and wiring went under the hill at the back of the box, and the false floor provided room for our wires and motors to be hidden (Fig 7). The arms of the motors poked through the floor and we hotglued the doors to them. We also had to put the wiring for the LED light through the floor and the lamppost, which proved to be a little too narrow for both wires, but we managed to simply hide the other wire behind the lamppost without issue. The final step of adding the wiring was to cut holes in the side of the box for the buttons, which Helen then labeled for clarity. 
 
-The final build: 
+<img src="./Images/FinalWiringInProject2.png"
+     alt="An Arduino and breadboard with wiring in a cardboard box; the floor of the scene has been lifted up to show this."
+     width = "400"
+     height = "500"><img src="./Images/FinalWiringInProject2.png"
+     alt="Servo motors stuck down to a cardboard box and wiring for the motors and LED light; the floor of the scene has been lifted up to show this."
+     width = "400"
+     height = "500">
 
+*Fig 7. The final wiring of our project in the box below the floor. (left) The Arduino and breadboard were under the hill at the back of the box, as this was wherer the bulk of the wires were and more space was needed. We were also able to cut a hole in the back of the box to run the power cord. (right) The motors were towards the front of the box, underneath the doors. They were stuck down with putty, which also gave them a small but necessary boost in height. 
 
+Once everything was combined, we made small adjustments to the places of objects and trimmed small pieces until everything was able to move smoothly without hitting other pieces or breaking, and then we were done (Fig 8).
+
+<img src="./Images/FinalFrontViewDoorsClosed.png"
+     alt="The front view of the cardboard box, painted brown, with doors painted to look like a wardrobe that are closed."
+     width = "400"
+     height = "500">
+     
+*Fig 8. The final appearance of our project from different angles. (left) A front angle with the front doors closed; the start of the scene.*
