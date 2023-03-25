@@ -18,7 +18,7 @@ From our brainstorming, we knew that we would want to use servo motors to open a
      
 *Fig 1. Our first iteration of wiring, which included two servo motors and one button to move them. This was a good start, but the wiring was too messy to be sustainable, especially as we continued to add elements, so we ended up completely redoing this same setup to look nicer.*
 
-Adding the LED light for the lamppost felt like the next logical step in our process (Fig 2), and we chose a yellow LED so that it wasn't obviously a colorful light, but it felt warmer and more vintage than a harsh white. When I rewired everything for this set up, I organized the wires more neatly."
+Adding the LED light for the lamppost felt like the next logical step in our process (Fig 2), and we chose a yellow LED so that it wasn't obviously a colorful light, but it felt warmer and more vintage than a harsh white. When I rewired everything for this set up, I organized the wires more neatly.
 
 <img src="./Images/Wiring1Button2ServosLED(organized).png"
      alt="Close up of an Arduino and a breadboard with wiring for a button, an LED light, and two motors."
