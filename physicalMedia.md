@@ -44,7 +44,7 @@ While the code still had a ways to go before it was ready, the hardware really o
 *Fig 4. All of the hardware we need for the project is now hooked up. We knew for the final project that we would need the hardware to have greater range, so at this point the buttons and the LED light have been put on extension wires. We later added extension wires to the servo motors as well.*
 
 
-## The Diorama
+## The Scene
 Helen was the lead in designing and building the diorama portion of this assignment. The basis of our project was a cardboard box, which they used felt, glitter, miniatures from Michael's, and paint to decorate. They also 3D printed two objects in resin on a personal 3D printer, the lamppost and the faun, Mr. Tumnus (Fig 5). The designs for these assets were posted on UltiMaker Thingiverse. Mr. Tumnus used a design called [Male Satyr](https://www.thingiverse.com/thing:3063960), posted by mrhers2 on August 23, 2018, and the lamppost came from a design titled [Street lamp (Réverbère)](https://www.thingiverse.com/thing:3641049), uploaded by Aspect50 on May 19, 2019.
 
 <img src="./Images/3DAssets.jpg"
