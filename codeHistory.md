@@ -3,7 +3,7 @@
 While we didn't keep track of our code through commits to this repository, we did keep a backup file of differrent iterations of our code in a spearate file as a back up incase certain changes didn't work and we needed to go back. In this file, we'll go through the big changes and hurdles we faced while developing the code for this project. 
 
 ## The original code
-Because neither of us had prior experience using Arduino, we started by finding an open source tutorial with one of the basic actions we knew we wanted to use in our project- moving a servo motor with a button- to provide a starting framework to build off of. The tutorial we used was [from Arduino Get Started](https://arduinogetstarted.com/tutorials/arduino-button-servo-motor).
+Because neither of us had prior experience using Arduino, we started by finding a tutorial with one of the basic actions we knew we wanted to use in our project- moving a servo motor with a button- to provide a starting framework to build off of. The tutorial we used was an open source one from [Arduino Get Started](https://arduinogetstarted.com/tutorials/arduino-button-servo-motor).
 
 ```
 /*
@@ -57,7 +57,7 @@ void loop() {
 ```
 
 ## Adding a second servo motor
-We knew that we were going to be working with sets of doors, so the first step was to adapt this this code ot include a second servo motor. This was a relatively simple change that was mostly just duplicating some variables and changing their names, so that part went smoothly. 
+We knew that we were going to be working with sets of doors, so the first step was to adapt this this code to include a second servo motor. This was a relatively simple change that was mostly just duplicating some variables and changing their names, so that part went smoothly. 
 
 ```
 #include <Servo.h>
