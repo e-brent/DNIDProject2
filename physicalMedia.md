@@ -4,9 +4,9 @@ Though a large portion of this repository is dedicated to documenting our coding
 Alt text image descriptions are provided.
 
 ## Arduino Build
-I (Emme) took the lead on the Arduino coding and wiring portion of this project. Because of the iterative nature of revising code (the details of which can be found in [this file](codeHistory.md)), the hardware and our wiring evolved over the course of the project. 
+I (Emme) took the lead on the Arduino coding and wiring portion of this project. Because of the iterative nature of revising code (the details of which can be found in [this file](codeHistory.md)), the hardware and our wiring evolved over the course of the project.
 
-From our brainstorming, we knew that we would want to use servo motors to open and close the doors of a wardrobe and have an LED for the iconic Narnia lamppost. Wiring an LED light seemed more straightforward, so we started with getting the servo motors working. The first tutorial we followed for coding and wiring was to use a button to move a servo motor, and since we knew that we would have double doors on the wardrobe, we quickly added a second servo motor (Fig 1).
+From our brainstorming, we knew that we wanted to use servo motors to open and close the doors of a wardrobe and have an LED for the iconic Narnia lamppost. Wiring an LED light seemed more straightforward, so we started with getting the servo motors working. The first tutorial we followed for coding and wiring was to use a button to move a servo motor, and since we knew that we would have double doors on the wardrobe, we quickly added a second servo motor (Fig 1). The tutorial was an open source tutorial from [Arduino Get Started](https://arduinogetstarted.com/tutorials/arduino-button-servo-motor).
 
 <img src="./Images/Wiring1Button2Servos (2).png"
      alt="Looking diagonally down at an Arduino Uno and breadboard. Yellow, red, white, and blue wires are used to connect two servo motors and a button."
@@ -18,7 +18,7 @@ From our brainstorming, we knew that we would want to use servo motors to open a
      
 *Fig 1. Our first iteration of wiring, which included two servo motors and one button to move them. This was a good start, but the wiring was too messy to be sustainable, especially as we continued to add elements, so we ended up completely redoing this same setup to look nicer.*
 
-Adding the LED light for the lamppost felt like the next logical step in our process (Fig 2), and we chose a yellow LED so that it wasn't obviously a colorful light, but it felt warmer and more vintage than a harsh white. When I rewired everything for this set up, I organized the wires more neatly.
+Adding the LED light for the lamppost felt like the next logical step in our process (Fig 2), and we chose a yellow LED so that it wasn't obviously a colorful light, but it felt warmer and more vintage than a harsh white. For wiring the LED, I used [this tutorial](https://roboticsbackend.com/arduino-led-complete-tutorial/) from The Robotics Back-End. When I rewired everything for this set up, I organized the wires more neatly. 
 
 <img src="./Images/Wiring1Button2ServosLED(organized).png"
      alt="Close up of an Arduino and a breadboard with wiring for a button, an LED light, and two motors."
