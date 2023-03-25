@@ -81,7 +81,7 @@ At this point, our individual pieces were complete and needed to be put together
 
 Once everything was combined, we made small adjustments to the places of objects and trimmed small pieces until everything was able to move smoothly without hitting other pieces or breaking, and then we were done (Fig 8).
 
-<img src="./Images/FinalFrontViewDoorsClosed.jpeg"
+<img src="./Images/FinalFrontViewClosedDoors.jpeg"
      alt="The front view of the cardboard box, painted brown, with doors painted to look like a wardrobe that are closed."
      width = "400"
      height = "500"><img src="./Images/FinalFrontBackDoorsClosed.jpeg"
@@ -95,7 +95,7 @@ Once everything was combined, we made small adjustments to the places of objects
      width = "400"
      height = "500">
      
-*Fig 8. The final appearance of our project from different angles. (left) A front angle with the front doors closed; the start of the scene. (middle left) A front angle with the back doors closed, showing the inside of the wardrobe. (middle right) A front angle with all doors open, looking in at Narnia. (right) A bird's eye viw of the final scene, showing the layers of the wardrobe.*
+*Fig 8. The final appearance of our project from different angles. (top left) A front angle with the front doors closed; the start of the scene. (top right) A front angle with the back doors closed, showing the inside of the wardrobe. (bottom left) A front angle with all doors open, looking in at Narnia. (bottom right) A bird's eye viw of the final scene, showing the layers of the wardrobe.*
 
 ## Design Changes
 Though we had a pretty good idea of what we wanted to do from the beginning, there were a couple small changes made throughout the process. Over spring break, while Emme finished the wiring, she got worried about how the servo motors would be placed in the scene and constructed a wardrobe facade that we could put on the front of the box (Fig 9). However, when it actually came time to build it, we realized that that wasn't necessary and reverted to our original plan.
@@ -116,7 +116,7 @@ The other change made was to the interior of the wardrobe. We had orignally plan
      
 *Fig 10. The contruction paper clothing we would have used, had they not ended up fitting in the wardrobe. We did really like the extra interactivity they would have added, but we like the visuals of the option we ended up going with better.*
 
-<img src="./Images/WardrobeBackDoorsPainted.jpeg"
+<img src="./Images/WardrobeBackDoorsPainted.png"
      alt="A front view of the cardboard box with the front doors removed and the backdoors closed, showing the painted clothing on them."
      width = "400"
      height = "500">
