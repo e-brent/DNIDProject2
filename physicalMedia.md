@@ -1,7 +1,7 @@
 # Physical Media
-Though a large portion of this repository is dedicated to documenting our coding process, equally important to the project are the physical mediums it manifested through. There are two broad categories for the physical apsects of this project: the wiring and Arduino hardware, and the set design of the diorama. Here, we will mostly be discussing the development of these aspects separately, as they didn't come together until towards the end of the project. If you want to see everything working together in action, check out our [video](unit2 project vid.mp4) included in this repository. 
+Though a large portion of this repository is dedicated to documenting our coding process, equally important to the project are the physical mediums it manifested through. There are two broad categories for the physical apsects of this project: the wiring and Arduino hardware, and the set design of the scene. Here, we will mostly be discussing the development of these aspects separately, as they didn't come together until towards the end of the project. If you want to see everything working together in action, check out our [video](unit2 project vid.mp4) included in this repository. 
 
-Alt text image descriptions are included.
+Alt text image descriptions are included in this file. (Please let me know if there are any issues with this, it is my first time using HTML!)
 
 ## Arduino Build
 I (Emme) took the lead on the Arduino coding and wiring portion of this project. Because of the iterative nature of revising code (the details of which can be found in [this file](codeHistory.md)), the hardware and our wiring evolved over the course of the project.
@@ -16,7 +16,7 @@ From our brainstorming, we knew that we wanted to use servo motors to open and c
      width = "400"
      height = "500"> 
      
-*Fig 1. Our first iteration of wiring, which included two servo motors and one button to move them. This was a good start, but the wiring was too messy to be sustainable, especially as we continued to add elements, so we ended up completely redoing this same setup to look nicer.*
+*Fig 1. Our first iteration of wiring, which included two servo motors and one button to move them. This was a good start, but the wiring was too messy to be sustainable, especially as we continued to add elements, so we ended up completely redoing this same setup to look nicer the next time we worked on the project.*
 
 Adding the LED light for the lamppost felt like the next logical step in our process (Fig 2), and we chose a yellow LED so that it wasn't obviously a colorful light, but it felt warmer and more vintage than a harsh white. For wiring the LED, I used [this tutorial](https://roboticsbackend.com/arduino-led-complete-tutorial/) from The Robotics Back-End. When I rewired everything for this set up, I organized the wires more neatly. 
 
@@ -45,7 +45,7 @@ While the code still had a ways to go before it was ready, the hardware really o
 
 
 ## The Scene
-Helen was the lead in designing and building the diorama portion of this assignment. The basis of our project was a cardboard box, which they used felt, glitter, miniatures from Michael's, and paint to decorate. They also 3D printed two objects in resin on a personal 3D printer: the lamppost and the faun, Mr. Tumnus (Fig 5). The designs for these assets were posted on UltiMaker Thingiverse. Mr. Tumnus used a design called [Male Satyr](https://www.thingiverse.com/thing:3063960), posted by mrhers2 on August 23, 2018, and the lamppost came from a design titled [Street lamp (Réverbère)](https://www.thingiverse.com/thing:3641049), uploaded by Aspect50 on May 19, 2019.
+Helen was the lead in designing and building the diorama portion of this assignment. The basis of our project was a cardboard box, which they used felt, glitter, miniatures from Michael's, wire, and paint to decorate. They also 3D printed two objects in resin on a personal 3D printer: the lamppost and the faun, Mr. Tumnus (Fig 5). The designs for these assets were found on UltiMaker Thingiverse. Mr. Tumnus used a design called [Male Satyr](https://www.thingiverse.com/thing:3063960), posted by mrhers2 on August 23, 2018, and the lamppost came from a design titled [Street lamp (Réverbère)](https://www.thingiverse.com/thing:3641049), uploaded by Aspect50 on May 19, 2019.
 
 <img src="./Images/3DAssets.jpg"
      alt="Looking down on a hand opened upward. In their palm is a 3D printed grey miniature lamppost and faun."
@@ -54,7 +54,7 @@ Helen was the lead in designing and building the diorama portion of this assignm
 
 *Fig 5. Our 3D printed assets, printed on a personal resin 3D printer.*
 
-These assets were painted using arylic paint and added to the set (Fig 6). The scene includes a false floor with a hill at the back which we used to hide the Arduino, breadboard, and wires. Holes have been cut in the floor for the LED  wires to go through as well as the arms of the motors. The doors have not yet been attached as this was before we combined our work. 
+These assets were painted using arylic paint and added to the set (Fig 6). The scene included a false floor with a hill at the back which we used to hide the Arduino, breadboard, and wires. Holes were cut in the floor for the LED  wires to go through as well as the arms of the motors. The doors have not yet been attached in these photos as this was before we combined our work. 
 
 <img src="./Images/SetBuildDetachedDoorsFront.png"
      alt="Looking in through a hole in the front of a cardboard on a winter scene with a faun and a lamppost. Painted doors are resting against the front of the box."
@@ -105,16 +105,16 @@ Though we had a pretty good idea of what we wanted to do from the beginning, the
      width = "400"
      height = "500">
 
-*Fig 9. We built this as an option for how we would construct the scene because we hadn't completely figured out the placement and orientation of the servo motors, but we didn't end up needing it.*
+*Fig 9. We built this as an option for how we could construct the scene because we hadn't completely figured out the placement and orientation of the servo motors yet, but we didn't end up needing to use it.*
 
-The other change made was to the interior of the wardrobe. We had orignally planned to create 3-dimensional hanging clothes that users could move out of the way. At one point, we had thought about using pages from the book in our scene (we bought a secondhand copy), and if we were already taking apart a book, then we could make the clothes out of book pages. When the rest of our design didn't end up using book pages, we felt too bad about destroying a book for only a couple pages, so Helen constructed some clothes out of contruction paper (Fig 10). However, after constructing the scene, we realized the wardrobe was too shallow for the clothes and they would get in the way of the doors moving. So, Helen painted coats on the back doors of the wardrobe as a final alternative (Fig 11). After doing this, we decided that it matched the styling of the scene better and we are both very happy with our final product.  
+The other change made was to the interior of the wardrobe. We had orignally planned to create 3-dimensional hanging clothes that users could move out of the way. At one point, we had thought about using pages from the book in our scene (we bought a secondhand copy), and if we were already taking apart a book, then we could make the clothes out of some of the book pages. When the rest of our design didn't end up using book pages, we felt too bad about destroying a book for only a couple pages, so Helen constructed some clothes out of contruction paper (Fig 10). However, after constructing the scene, we realized the wardrobe was too shallow for the clothes and they would get in the way of the doors moving. So, Helen painted coats on the back doors of the wardrobe as a final alternative (Fig 11). After doing this, we realized that it matched the styling of the scene really well and we are both very happy with our final product.  
 
 <img src="./Images/ClothingUnused.jpeg"
      alt="Blue and green construction paper folded into the shape of clothing, hung on very small wire hangers."
      width = "400"
      height = "500">
      
-*Fig 10. The contruction paper clothing we would have used, had they not ended up fitting in the wardrobe. We did really like the extra interactivity they would have added, but we like the visuals of the option we ended up going with better.*
+*Fig 10. The contruction paper clothing we would have used, had they ended up fitting in the wardrobe. We did really like the extra interactivity they would have added, but we like the visuals of the option we ended up going with better.*
 
 <img src="./Images/WardrobeBackDoorsPainted.png"
      alt="A front view of the cardboard box with the front doors removed and the backdoors closed, showing the painted clothing on them."
